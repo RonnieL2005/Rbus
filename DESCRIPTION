@@ -1,16 +1,28 @@
 Package: Rbus
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Business Analytics and Visualizations Toolkit
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Ronnie", "Langat",
+      email = "ronnielangat2020@gmail.com",
       role = c("aut", "cre")
     )
   )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Description: Rbus provides functions to import sales data from Excel,generate business-friendly charts, compute summary statistics,and forecast future sales.
+License: MIT
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 4.0.0)
+Imports:
+    readxl,
+    ggplot2,
+    forecast,
+    dplyr,
+    janitor
+Suggests:
+    testthat (>= 3.0.0),
+    roxygen2,
+    devtools
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
